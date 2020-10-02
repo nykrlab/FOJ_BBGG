@@ -31,7 +31,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".profileActivity"></activity>
-        <activity android:name=".VCActivity"></activity>
+        <activity android:name=".VcActivity"></activity>
+        <activity android:name="myVC"></activity>
 
     </application>
 
