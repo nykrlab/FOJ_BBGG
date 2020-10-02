@@ -2,6 +2,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.foj">
 
+    <!-- seungho -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- seungho -->
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -10,19 +14,25 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".splashActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
-        <activity android:name=".FirstActivity"></activity>
+        <activity android:name=".FirstActivity"/>
         <activity android:name=".LoginActivity" />
         <activity android:name=".RegCusActivity" />
         <activity android:name=".RegSelActivity" />
         <activity android:name=".IcxCusActivity" />
         <activity android:name=".IcxSelActivity" />
         <activity android:name=".RegDid" />
+        <activity android:name=".MyaccountActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".profileActivity"></activity>
+        <activity android:name=".VCActivity"></activity>
+
     </application>
 
 </manifest>

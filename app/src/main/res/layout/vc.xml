@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="0dp"
+        android:fillViewport="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <FrameLayout
+                android:id="@+id/frameLayout"
+                android:layout_width="410dp"
+                android:layout_height="170dp"
+                android:background="@drawable/gradient"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="125dp"
+                    android:layout_marginTop="50dp"
+                    android:text="VC 발급 요청"
+                    android:fontFamily="@font/applesdgothicneoeb"
+                    android:textSize="30dp"
+                    android:textColor="#000000"/>
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/applesdgothicneoeb"
+                android:layout_gravity="center"
+                android:paddingTop="85dp"
+                android:text="VC 발급을 위해 다 정보를 입력하세요"
+                android:textColor="#000000"
+                android:textSize="12dp" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="1dp"
+            android:layout_marginBottom="1dp"
+            android:elevation="6dp"
+            android:orientation="vertical"
+            android:padding="16dp">
+            <TextView
+                android:gravity="left"
+                android:layout_marginLeft="5dp"
+                android:text="회사명"
+                android:textSize="15dp"
+                android:textColor="#000000"
+                android:fontFamily="@font/applesdgothicneoeb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp" />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:background="@drawable/blank"
+                android:text="제주 D 농장"
+                android:textSize="12dp"
+                />
+            <TextView
+                android:gravity="left"
+                android:layout_marginLeft="5dp"
+                android:text="회사 주소"
+                android:textSize="15dp"
+                android:textColor="#000000"
+                android:fontFamily="@font/applesdgothicneoeb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp" />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:background="@drawable/blank"
+                android:text="제주시 제주올레길 1"
+                android:textSize="12dp"
+                android:padding="20dp"
+                />
+            <TextView
+                android:gravity="left"
+                android:layout_marginLeft="5dp"
+                android:text="사업자번호"
+                android:textSize="15dp"
+                android:textColor="#000000"
+                android:fontFamily="@font/applesdgothicneoeb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp" />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:background="@drawable/blank"
+                android:text="123456"
+                android:textSize="12dp"
+                android:padding="20dp"
+                />
+            <TextView
+                android:gravity="left"
+                android:layout_marginLeft="5dp"
+                android:text="생산보고서"
+                android:textSize="15dp"
+                android:textColor="#000000"
+                android:fontFamily="@font/applesdgothicneoeb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp" />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:background="@drawable/blank"
+                android:text="생산보고서.hwp"
+                android:textSize="12dp"
+                android:padding="20dp"
+                />
+            <TextView
+                android:gravity="left"
+                android:layout_marginLeft="5dp"
+                android:text="회사 ICX 계좌"
+                android:textSize="15dp"
+                android:textColor="#000000"
+                android:fontFamily="@font/applesdgothicneoeb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp" />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:background="@drawable/blank"
+                android:text="hxde6c30f9ac968f637c4bfea0d13ce5177"
+                android:textSize="12dp"
+                android:padding="20dp"
+                />
+            <TextView
+                android:gravity="left"
+                android:layout_marginLeft="5dp"
+                android:text="책임 매니저 이름"
+                android:textSize="15dp"
+                android:textColor="#000000"
+                android:fontFamily="@font/applesdgothicneoeb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp" />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:background="@drawable/blank"
+                android:text="김제주"
+                android:textSize="12dp"
+                android:padding="20dp"
+                />
+            <TextView
+                android:gravity="left"
+                android:layout_marginLeft="5dp"
+                android:text="매니저 이메일"
+                android:textSize="15dp"
+                android:textColor="#000000"
+                android:fontFamily="@font/applesdgothicneoeb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp" />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:background="@drawable/blank"
+                android:text="jejufarm@gmail.com"
+                android:textSize="12dp"
+                android:padding="20dp"
+                />
+            <TextView
+                android:gravity="left"
+                android:layout_marginLeft="5dp"
+                android:text="상세 설명"
+                android:textSize="15dp"
+                android:textColor="#000000"
+                android:fontFamily="@font/applesdgothicneoeb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp" />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:background="@drawable/blank"
+                android:text="제주 1st 농장"
+                android:textSize="12dp"
+                android:padding="20dp"
+                />
+            <Button
+                android:id="@+id/btnVC"
+                android:layout_width="380dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/acbtn"
+                android:fontFamily="@font/applesdgothicneoeb"
+                android:text="VC 발급 요청"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="20dp" />
+
+        </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

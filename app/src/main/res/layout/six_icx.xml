@@ -66,5 +66,15 @@
 
     </LinearLayout>
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="약 5초에서 10초 소요됩니다"
+        android:fontFamily="@font/applesdgothicneoeb"
+        android:textSize="10dp"
+        android:textColor="#000000"
+        android:padding="10dp"
+        android:gravity="center"/>
+
 
 </LinearLayout>

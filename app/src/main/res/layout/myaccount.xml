@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:background="@drawable/gradient"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppinsbold"
+            android:paddingLeft="120dp"
+            android:paddingTop="90dp"
+            android:text="ICX 1002,39"
+            android:textColor="#000000"
+            android:textSize="30dp" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppinsbold"
+            android:paddingLeft="155dp"
+            android:paddingTop="145dp"
+            android:text="acccount details >"
+            android:textColor="#000000"
+            android:textSize="12dp" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="1dp"
+        android:elevation="6dp"
+        android:orientation="vertical"
+        android:padding="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout">
+
+        <Button
+            android:id="@+id/btnprfl"
+            android:layout_width="380dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="4dp"
+            android:background="@drawable/acbtn"
+            android:fontFamily="@font/applesdgothicneoeb"
+            android:text="계정"
+            android:textColor="#000000"
+            android:textSize="20dp" />
+        <Button
+            android:id="@+id/btnprdct"
+            android:layout_width="380dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="4dp"
+            android:background="@drawable/acbtn"
+            android:fontFamily="@font/applesdgothicneoeb"
+            android:text="상품 관리"
+            android:textColor="#000000"
+            android:textSize="20dp" />
+        <Button
+            android:id="@+id/btnordr"
+            android:layout_width="380dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="4dp"
+            android:background="@drawable/acbtn"
+            android:fontFamily="@font/applesdgothicneoeb"
+            android:text="주문 내역"
+            android:textColor="#000000"
+            android:textSize="20dp" />
+        <Button
+            android:id="@+id/btnpymnt"
+            android:layout_width="380dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="4dp"
+            android:background="@drawable/acbtn"
+            android:fontFamily="@font/applesdgothicneoeb"
+            android:text="결제 정보"
+            android:textColor="#000000"
+            android:textSize="20dp" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
