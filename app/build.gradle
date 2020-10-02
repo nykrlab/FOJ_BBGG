@@ -1,8 +1,8 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 30
-    buildToolsVersion "30.0.2"
+    compileSdkVersion 29
+    buildToolsVersion '30.0.2'
 
     defaultConfig {
         applicationId "com.example.foj"
@@ -20,6 +20,13 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+
+    /* seungho */
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    /* seungho */
 }
 
 dependencies {
@@ -32,4 +39,11 @@ dependencies {
 
     implementation 'com.airbnb.android:lottie:3.4.1'
 
+    /* seungho */
+    implementation files('libs\\icon-did-0.8.6.jar')
+    implementation 'com.google.code.gson:gson:2.8.0'
+    implementation 'org.bouncycastle:bcprov-jdk15on:1.60'
+    implementation files('libs\\json_simple-1.1.jar')
+    implementation 'foundation.icon:icon-sdk:1.0.0'
+    /* seungho */
 }
