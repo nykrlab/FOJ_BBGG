@@ -14,7 +14,11 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".splashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
         <activity android:name=".FirstActivity"/>
         <activity android:name=".LoginActivity" />
@@ -24,15 +28,18 @@
         <activity android:name=".IcxSelActivity" />
         <activity android:name=".RegDid" />
         <activity android:name=".MyaccountActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity android:name=".profileActivity"></activity>
         <activity android:name=".VcActivity"></activity>
-        <activity android:name="myVC"></activity>
+        <activity android:name=".myVC"></activity>
+        <activity android:name=".vctoVP"></activity>
+        <activity android:name=".myVP"></activity>
+        <activity android:name=".OrderList"></activity>
+        <activity android:name=".ProductList1"></activity>
+        <activity android:name=".AddProduct"></activity>
+        <activity android:name=".OrderDetails"></activity>
+        <activity android:name=".ProductList2"></activity>
 
     </application>
 
