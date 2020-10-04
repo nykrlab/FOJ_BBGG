@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 import org.bouncycastle.util.encoders.Hex;
@@ -49,14 +50,14 @@ public class VcActivity extends Activity {
     Button btnLicence, btnIcxAddress;
     String licence, icxAddress;
     /* seungho */
-    Button btnVC;
+    ImageView btnVC;
 
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.vc);
 
         /* seungho */
-        btnLicence = findViewById(R.id.licenceNumber);
+        /*btnLicence = findViewById(R.id.licenceNumber);
         btnIcxAddress = findViewById(R.id.icxAddress);
         /* seungho */
 
@@ -66,13 +67,13 @@ public class VcActivity extends Activity {
             public void onClick(View v){
 
                 /* seungho */
-                String VC = null;
+                /*String VC = null;
                 try {
 
                     licence = (String) btnLicence.getText();
                     icxAddress = (String) btnIcxAddress.getText();
                     VC = new issueVC(licence, icxAddress).execute().get();
-//                    Toast.makeText(getApplicationContext(), VC, Toast.LENGTH_LONG).show();
+                    //                    Toast.makeText(getApplicationContext(), VC, Toast.LENGTH_LONG).show();
 
                 } catch (ExecutionException e) {
                     e.printStackTrace();
@@ -80,8 +81,10 @@ public class VcActivity extends Activity {
                     e.printStackTrace();
                 }
 
+                 */
+
                 Intent intent = new Intent(VcActivity.this,myVC.class);
-                intent.putExtra("VC", VC);
+                /*intent.putExtra("VC", VC);*/
                 startActivity(intent);
                 /* seungho */
             }
@@ -90,7 +93,7 @@ public class VcActivity extends Activity {
     }
 
     /* seungho */
-    class issueVC extends AsyncTask<Void, Void, String> {
+    /*class issueVC extends AsyncTask<Void, Void, String> {
 
         HttpProvider httpProvider = new HttpProvider("https://bicon.net.solidwallet.io/api/v3");
         IconService iconService = new IconService(httpProvider);
@@ -119,8 +122,8 @@ public class VcActivity extends Activity {
                         .build();
                 List<String> requestClaimTypes = Arrays.asList("licenseNumber");
                 List<String> requestClaimValues = Arrays.asList(this.licenseNumber);
-//                requestClaimTypes.add("icxAddress");
-//                requestClaimValues.add(this.icxAddress);
+                //                requestClaimTypes.add("icxAddress");
+                //                requestClaimValues.add(this.icxAddress);
                 Map claims = new HashMap();
                 for (int i = 0; i < requestClaimTypes.size(); i++) {
                     claims.put(requestClaimTypes.get(i), requestClaimValues.get(i));
@@ -223,4 +226,5 @@ public class VcActivity extends Activity {
         }
     }
     /* seungho */
+
 }
