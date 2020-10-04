@@ -7,7 +7,7 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.widget.ImageView;
 
-import com.airbnb.lottie.LottieAnimationView;
+//import com.airbnb.lottie.LottieAnimationView;
 
 public class splashActivity extends AppCompatActivity {
     Handler handler;
