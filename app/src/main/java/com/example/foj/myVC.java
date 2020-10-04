@@ -13,15 +13,16 @@ import androidx.annotation.Nullable;
 public class myVC extends Activity {
 
     /* seungho */
-    EditText etVC;
+    /*EditText etVC;
     /* seungho */
+
 
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.myvc);
 
         /* seungho */
-        Intent intent = getIntent();
+        /*Intent intent = getIntent();
         String VC = intent.getExtras().getString("VC");
         Log.i("### VC", VC);
 
