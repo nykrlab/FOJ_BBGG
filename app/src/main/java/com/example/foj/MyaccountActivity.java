@@ -6,14 +6,11 @@ import android.os.AsyncTask;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
-import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
-
-import androidx.annotation.Nullable;
 
 import java.io.IOException;
 import java.math.BigDecimal;
-import java.math.BigInteger;
 import java.util.concurrent.ExecutionException;
 
 import foundation.icon.icx.IconService;
@@ -23,26 +20,24 @@ import foundation.icon.icx.transport.http.HttpProvider;
 
 import static java.lang.Math.pow;
 
-public class MyaccountActivity extends Activity {
-    /* seungho */
-    TextView tvbalance;
-    /* seungho */
-    Button btnprfl, btnprdct, btnordr, btnpymnt;
 
-    protected void onCreate(@Nullable Bundle savedInstanceState) {
+public class MyaccountActivity extends Activity {
+    TextView tvbalance;
+    ImageView btnprfl, btnprdct, btnordr, btnpymnt;
+
+    public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.myaccount);
 
-        /* seungho */
-        tvbalance = findViewById(R.id.balance);
-        /* seungho */
+        tvbalance=findViewById(R.id.balance);
+
         btnprfl = findViewById(R.id.btnprfl);
         btnprdct = findViewById(R.id.btnprdct);
         btnordr = findViewById(R.id.btnordr);
         btnpymnt = findViewById(R.id.btnpymnt);
 
         /* seungho */
-        try {
+        /*try {
             String balance = new getBalance().execute().get();
             tvbalance.setText(balance);
         } catch (InterruptedException e) {
@@ -63,14 +58,14 @@ public class MyaccountActivity extends Activity {
         btnprdct.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent (MyaccountActivity.this,LoginActivity.class);
+                Intent intent = new Intent (MyaccountActivity.this, ProductList1.class);
                 startActivity(intent);
             }
         });
         btnordr.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent (MyaccountActivity.this,LoginActivity.class);
+                Intent intent = new Intent (MyaccountActivity.this,OrderList.class);
                 startActivity(intent);
             }
         });
@@ -83,9 +78,8 @@ public class MyaccountActivity extends Activity {
         });
 
     }
-
     /* seungho */
-    class getBalance extends AsyncTask<Void, Void, String> {
+    /*class getBalance extends AsyncTask<Void, Void, String> {
 
         HttpProvider httpProvider = new HttpProvider("https://bicon.net.solidwallet.io/api/v3");
         IconService iconService = new IconService(httpProvider);
@@ -109,4 +103,6 @@ public class MyaccountActivity extends Activity {
         }
     }
     /* seungho */
+
+
 }
