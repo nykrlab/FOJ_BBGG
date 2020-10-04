@@ -1,5 +1,9 @@
 apply plugin: 'com.android.application'
 
+/* seungho */
+apply plugin: 'com.google.gms.google-services'
+/* seungho */
+
 android {
     compileSdkVersion 29
     buildToolsVersion '30.0.2'
@@ -37,12 +41,17 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
 
-
     /* seungho */
     implementation files('libs\\icon-did-0.8.6.jar')
     implementation 'com.google.code.gson:gson:2.8.0'
     implementation 'org.bouncycastle:bcprov-jdk15on:1.60'
     implementation files('libs\\json_simple-1.1.jar')
     implementation 'foundation.icon:icon-sdk:1.0.0'
+
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+
+    implementation 'com.google.firebase:firebase-database:19.3.0'
+    implementation 'com.google.firebase:firebase-storage:17.0.0'
+    implementation 'com.google.firebase:firebase-analytics:17.2.2'
     /* seungho */
 }
