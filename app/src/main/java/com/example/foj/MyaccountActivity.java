@@ -22,14 +22,18 @@ import static java.lang.Math.pow;
 
 
 public class MyaccountActivity extends Activity {
+    /* seungho */
     TextView tvbalance;
+    /* seungho */
     ImageView btnprfl, btnprdct, btnordr, btnpymnt;
 
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.myaccount);
 
+        /* seungho */
         tvbalance=findViewById(R.id.balance);
+        /* seungho */
 
         btnprfl = findViewById(R.id.btnprfl);
         btnprdct = findViewById(R.id.btnprdct);
@@ -37,9 +41,9 @@ public class MyaccountActivity extends Activity {
         btnpymnt = findViewById(R.id.btnpymnt);
 
         /* seungho */
-        /*try {
+        try {
             String balance = new getBalance().execute().get();
-            tvbalance.setText(balance);
+            tvbalance.setText("ICX " + balance);
         } catch (InterruptedException e) {
             e.printStackTrace();
         } catch (ExecutionException e) {
@@ -79,7 +83,7 @@ public class MyaccountActivity extends Activity {
 
     }
     /* seungho */
-    /*class getBalance extends AsyncTask<Void, Void, String> {
+    class getBalance extends AsyncTask<Void, Void, String> {
 
         HttpProvider httpProvider = new HttpProvider("https://bicon.net.solidwallet.io/api/v3");
         IconService iconService = new IconService(httpProvider);
