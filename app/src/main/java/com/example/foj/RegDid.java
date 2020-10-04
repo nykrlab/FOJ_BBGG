@@ -69,7 +69,7 @@ public class RegDid extends AppCompatActivity {
         done = findViewById(R.id.done);
 
         /* seungho */
-        try {
+        /*try {
             document = new RegisterDid().execute().get();
             dids.setText(document.getId());
             Toast.makeText(getApplicationContext(), dids.getText(), Toast.LENGTH_LONG).show();
