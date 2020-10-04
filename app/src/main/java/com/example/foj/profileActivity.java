@@ -37,7 +37,7 @@ public class profileActivity extends Activity {
         btnvp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent (profileActivity.this,LoginActivity.class);
+                Intent intent = new Intent (profileActivity.this,vctoVP.class);
                 startActivity(intent);
             }
         });
