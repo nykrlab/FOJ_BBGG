@@ -47,8 +47,8 @@ import foundation.icon.icx.transport.jsonrpc.RpcValue;
 
 public class VcActivity extends Activity {
     /* seungho */
-    Button btnLicence, btnIcxAddress;
-    String licence, icxAddress;
+    Button btnName, btnAddress, btnLicence, btnReport, btnEmail, btnIcxAddress;
+    String name, address, licence, report, email, icxAddress;
     /* seungho */
     ImageView btnVC;
 
@@ -57,7 +57,11 @@ public class VcActivity extends Activity {
         setContentView(R.layout.vc);
 
         /* seungho */
-        /*btnLicence = findViewById(R.id.licenceNumber);
+        btnName = findViewById(R.id.name);
+        btnAddress = findViewById(R.id.address);
+        btnLicence = findViewById(R.id.licenceNumber);
+        btnReport = findViewById(R.id.report);
+        btnEmail = findViewById(R.id.email);
         btnIcxAddress = findViewById(R.id.icxAddress);
         /* seungho */
 
@@ -67,25 +71,40 @@ public class VcActivity extends Activity {
             public void onClick(View v){
 
                 /* seungho */
-                /*String VC = null;
                 try {
 
+                    name = (String) btnName.getText();
+                    String nameVC = new issueVC("name", name).execute().get();
+
+                    address = (String) btnAddress.getText();
+                    String addressVC = new issueVC("address", address).execute().get();
+
                     licence = (String) btnLicence.getText();
+                    String licenceVC = new issueVC("licence", licence).execute().get();
+
+                    report = (String) btnReport.getText();
+                    String reportVC = new issueVC("report", report).execute().get();
+
+                    email = (String) btnEmail.getText();
+                    String emailVC = new issueVC("email", email).execute().get();
+
                     icxAddress = (String) btnIcxAddress.getText();
-                    VC = new issueVC(licence, icxAddress).execute().get();
-                    //                    Toast.makeText(getApplicationContext(), VC, Toast.LENGTH_LONG).show();
+                    String icxAddressVC = new issueVC("icxAddress", icxAddress).execute().get();
+
+                    Intent intent = new Intent(VcActivity.this,myVC.class);
+                    intent.putExtra("nameVC", nameVC);
+                    intent.putExtra("addressVC", addressVC);
+                    intent.putExtra("licenceVC", licenceVC);
+                    intent.putExtra("reportVC", reportVC);
+                    intent.putExtra("emailVC", emailVC);
+                    intent.putExtra("icxAddressVC", icxAddressVC);
+                    startActivity(intent);
 
                 } catch (ExecutionException e) {
                     e.printStackTrace();
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
-
-                 */
-
-                Intent intent = new Intent(VcActivity.this,myVC.class);
-                /*intent.putExtra("VC", VC);*/
-                startActivity(intent);
                 /* seungho */
             }
         });
@@ -93,7 +112,7 @@ public class VcActivity extends Activity {
     }
 
     /* seungho */
-    /*class issueVC extends AsyncTask<Void, Void, String> {
+    class issueVC extends AsyncTask<Void, Void, String> {
 
         HttpProvider httpProvider = new HttpProvider("https://bicon.net.solidwallet.io/api/v3");
         IconService iconService = new IconService(httpProvider);
@@ -101,11 +120,11 @@ public class VcActivity extends Activity {
         Algorithm algorithm = AlgorithmProvider.create(AlgorithmProvider.Type.ES256K);
         EncodeType encodeType = EncodeType.BASE64;
 
-        String licenseNumber, icxAddress;
+        String claimType, claimInfo;
 
-        issueVC(String licenseNumber, String icxAddress) {
-            this.licenseNumber = licenseNumber;
-            this. icxAddress = icxAddress;
+        issueVC(String claimType, String claimInfo) {
+            this.claimType = claimType;
+            this. claimInfo = claimInfo;
         }
 
         @Override
@@ -120,10 +139,8 @@ public class VcActivity extends Activity {
                 DidKeyHolder holderKeyHolder = new DidKeyHolder.Builder(holderKeyProvider)
                         .did(holderDid)
                         .build();
-                List<String> requestClaimTypes = Arrays.asList("licenseNumber");
-                List<String> requestClaimValues = Arrays.asList(this.licenseNumber);
-                //                requestClaimTypes.add("icxAddress");
-                //                requestClaimValues.add(this.icxAddress);
+                List<String> requestClaimTypes = Arrays.asList(this.claimType);
+                List<String> requestClaimValues = Arrays.asList(this.claimInfo);
                 Map claims = new HashMap();
                 for (int i = 0; i < requestClaimTypes.size(); i++) {
                     claims.put(requestClaimTypes.get(i), requestClaimValues.get(i));
@@ -156,7 +173,7 @@ public class VcActivity extends Activity {
 
                 List<String> claimTypes = claimRequest.getClaimTypes();
                 Map claimMap = new HashMap();
-                claimMap.put(claimTypes.get(0), this.licenseNumber);
+                claimMap.put(claimTypes.get(0), this.claimInfo);
 
                 issuerDid = "did:icon:03:0x123456789";
                 String issuerKeyId = "Issuer-key";

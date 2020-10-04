@@ -56,7 +56,7 @@
                 android:gravity="left"
                 android:layout_marginTop="16dp"
                 android:layout_marginLeft="21dp"
-                android:text="회사명"
+                android:text="농가명"
                 android:textSize="15dp"
                 android:textColor="#000000"
                 android:fontFamily="@font/applesdgothicneoeb"
@@ -64,6 +64,7 @@
                 android:layout_height="wrap_content"
                 android:padding="10dp" />
             <Button
+                android:id="@+id/name"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:layout_width="wrap_content"
@@ -76,7 +77,7 @@
                 android:gravity="left"
                 android:layout_marginTop="16dp"
                 android:layout_marginLeft="21dp"
-                android:text="회사 주소"
+                android:text="농가 주소"
                 android:textSize="15dp"
                 android:textColor="#000000"
                 android:fontFamily="@font/applesdgothicneoeb"
@@ -84,6 +85,7 @@
                 android:layout_height="wrap_content"
                 android:padding="10dp" />
             <Button
+                android:id="@+id/address"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:layout_width="wrap_content"
@@ -119,6 +121,28 @@
                 android:gravity="left"
                 android:layout_marginTop="16dp"
                 android:layout_marginLeft="21dp"
+                android:text="농가 이메일"
+                android:textSize="15dp"
+                android:textColor="#000000"
+                android:fontFamily="@font/applesdgothicneoeb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp" />
+            <Button
+                android:id="@+id/email"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:background="@drawable/blank"
+                android:text="jejufarm@gmail.com"
+                android:textSize="12dp"
+                android:padding="20dp"
+                />
+            <TextView
+                android:gravity="left"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="21dp"
                 android:text="생산보고서"
                 android:textSize="15dp"
                 android:textColor="#000000"
@@ -127,6 +151,7 @@
                 android:layout_height="wrap_content"
                 android:padding="10dp" />
             <Button
+                android:id="@+id/report"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:layout_width="wrap_content"
@@ -140,7 +165,7 @@
                 android:gravity="left"
                 android:layout_marginTop="16dp"
                 android:layout_marginLeft="21dp"
-                android:text="회사 ICX 계좌"
+                android:text="농가 ICX 계좌"
                 android:textSize="15dp"
                 android:textColor="#000000"
                 android:fontFamily="@font/applesdgothicneoeb"
@@ -155,48 +180,6 @@
                 android:layout_height="60dp"
                 android:background="@drawable/blank"
                 android:text="hxde6c30f9ac968f637c4bfea0d13ce5177"
-                android:textSize="12dp"
-                android:padding="20dp"
-                />
-            <TextView
-                android:gravity="left"
-                android:layout_marginTop="16dp"
-                android:layout_marginLeft="21dp"
-                android:text="책임 매니저 이름"
-                android:textSize="15dp"
-                android:textColor="#000000"
-                android:fontFamily="@font/applesdgothicneoeb"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="10dp" />
-            <Button
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_width="wrap_content"
-                android:layout_height="60dp"
-                android:background="@drawable/blank"
-                android:text="김제주"
-                android:textSize="12dp"
-                android:padding="20dp"
-                />
-            <TextView
-                android:gravity="left"
-                android:layout_marginTop="16dp"
-                android:layout_marginLeft="21dp"
-                android:text="매니저 이메일"
-                android:textSize="15dp"
-                android:textColor="#000000"
-                android:fontFamily="@font/applesdgothicneoeb"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="10dp" />
-            <Button
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_width="wrap_content"
-                android:layout_height="60dp"
-                android:background="@drawable/blank"
-                android:text="jejufarm@gmail.com"
                 android:textSize="12dp"
                 android:padding="20dp"
                 />

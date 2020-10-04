@@ -39,16 +39,15 @@
         android:gravity="left"
         />
 
-
-    <EditText
-        android:id="@+id/username"
-        android:gravity="left"
-        android:layout_marginLeft="5dp"
-        android:text="eyJhbGciOiJIUzI1NiIsInR5cCI6
-        IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3"
-        android:fontFamily="@font/poppinsregular"
-        android:layout_width="350dp"
-        android:layout_height="wrap_content" />
+<!--    <EditText-->
+<!--        android:id="@+id/username"-->
+<!--        android:gravity="left"-->
+<!--        android:layout_marginLeft="5dp"-->
+<!--        android:text="eyJhbGciOiJIUzI1NiIsInR5cCI6-->
+<!--        IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3"-->
+<!--        android:fontFamily="@font/poppinsregular"-->
+<!--        android:layout_width="350dp"-->
+<!--        android:layout_height="wrap_content" />-->
 
     <Button
        android:id="@+id/btnsave"

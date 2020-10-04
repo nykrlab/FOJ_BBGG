@@ -10,10 +10,19 @@ import android.widget.EditText;
 
 import androidx.annotation.Nullable;
 
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+
+import java.util.HashMap;
+import java.util.Map;
+
 public class myVC extends Activity {
 
     /* seungho */
-    /*EditText etVC;
+//    EditText etVC;
+    Button btnsave;
+
+    DatabaseReference mPostReference;
     /* seungho */
 
 
@@ -22,12 +31,39 @@ public class myVC extends Activity {
         setContentView(R.layout.myvc);
 
         /* seungho */
-        /*Intent intent = getIntent();
-        String VC = intent.getExtras().getString("VC");
-        Log.i("### VC", VC);
+        Intent intent = getIntent();
+        String nameVC = intent.getExtras().getString("nameVC");
+        String addressVC = intent.getExtras().getString("addressVC");
+        String licenceVC = intent.getExtras().getString("licenceVC");
+        String reportVC = intent.getExtras().getString("reportVC");
+        String emailVC = intent.getExtras().getString("emailVC");
+        String icxAddressVC = intent.getExtras().getString("icxAddressVC");
 
-        etVC = findViewById(R.id.username);
-        etVC.setText(VC);
+        Map<String, Object> childUpdates = new HashMap<>();
+        childUpdates.put("nameVC", nameVC);
+        childUpdates.put("addressVC", addressVC);
+        childUpdates.put("licenceVC", licenceVC);
+        childUpdates.put("reportVC", reportVC);
+        childUpdates.put("emailVC", emailVC);
+        childUpdates.put("icxAddressVC", icxAddressVC);
+
+//        etVC = findViewById(R.id.username);
+//        etVC.setText(VC);
+
+        btnsave = findViewById(R.id.btnsave);
+        btnsave.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                mPostReference = FirebaseDatabase.getInstance().getReference().child("did:icon:03:0x987654321");
+                mPostReference.updateChildren(childUpdates);
+
+                Intent intent = new Intent(myVC.this,profileActivity.class);
+                startActivity(intent);
+
+            }
+        });
+
         /* seungho */
 
     }
