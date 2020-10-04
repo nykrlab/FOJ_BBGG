@@ -40,14 +40,14 @@
         />
 
 
-    <EditText
-        android:id="@+id/username"
-        android:gravity="left"
-        android:layout_marginLeft="5dp"
-        android:text="eHdidjejakTwhwosj@heuaoa"
-        android:fontFamily="@font/poppinsregular"
-        android:layout_width="350dp"
-        android:layout_height="wrap_content" />
+<!--    <EditText-->
+<!--        android:id="@+id/username"-->
+<!--        android:gravity="left"-->
+<!--        android:layout_marginLeft="5dp"-->
+<!--        android:text="eHdidjejakTwhwosj@heuaoa"-->
+<!--        android:fontFamily="@font/poppinsregular"-->
+<!--        android:layout_width="350dp"-->
+<!--        android:layout_height="wrap_content" />-->
 
 
 </LinearLayout>
