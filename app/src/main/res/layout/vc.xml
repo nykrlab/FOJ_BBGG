@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:gravity="center">
+    android:orientation="vertical">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -41,7 +40,7 @@
                 android:fontFamily="@font/applesdgothicneoeb"
                 android:layout_gravity="center"
                 android:paddingTop="85dp"
-                android:text="VC 발급을 위해 다 정보를 입력하세요"
+                android:text="VC 발급을 위해 다음 정보를 입력하세요"
                 android:textColor="#000000"
                 android:textSize="12dp" />
         </FrameLayout>
@@ -52,11 +51,11 @@
             android:layout_marginEnd="1dp"
             android:layout_marginBottom="1dp"
             android:elevation="6dp"
-            android:orientation="vertical"
-            android:padding="16dp">
+            android:orientation="vertical">
             <TextView
                 android:gravity="left"
-                android:layout_marginLeft="5dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="21dp"
                 android:text="회사명"
                 android:textSize="15dp"
                 android:textColor="#000000"
@@ -65,6 +64,8 @@
                 android:layout_height="wrap_content"
                 android:padding="10dp" />
             <Button
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
                 android:layout_width="wrap_content"
                 android:layout_height="60dp"
                 android:background="@drawable/blank"
@@ -73,7 +74,8 @@
                 />
             <TextView
                 android:gravity="left"
-                android:layout_marginLeft="5dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="21dp"
                 android:text="회사 주소"
                 android:textSize="15dp"
                 android:textColor="#000000"
@@ -82,6 +84,8 @@
                 android:layout_height="wrap_content"
                 android:padding="10dp" />
             <Button
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
                 android:layout_width="wrap_content"
                 android:layout_height="60dp"
                 android:background="@drawable/blank"
@@ -91,7 +95,8 @@
                 />
             <TextView
                 android:gravity="left"
-                android:layout_marginLeft="5dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="21dp"
                 android:text="사업자번호"
                 android:textSize="15dp"
                 android:textColor="#000000"
@@ -101,6 +106,8 @@
                 android:padding="10dp" />
             <Button
                 android:id="@+id/licenceNumber"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
                 android:layout_width="wrap_content"
                 android:layout_height="60dp"
                 android:background="@drawable/blank"
@@ -110,7 +117,8 @@
                 />
             <TextView
                 android:gravity="left"
-                android:layout_marginLeft="5dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="21dp"
                 android:text="생산보고서"
                 android:textSize="15dp"
                 android:textColor="#000000"
@@ -119,6 +127,8 @@
                 android:layout_height="wrap_content"
                 android:padding="10dp" />
             <Button
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
                 android:layout_width="wrap_content"
                 android:layout_height="60dp"
                 android:background="@drawable/blank"
@@ -128,7 +138,8 @@
                 />
             <TextView
                 android:gravity="left"
-                android:layout_marginLeft="5dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="21dp"
                 android:text="회사 ICX 계좌"
                 android:textSize="15dp"
                 android:textColor="#000000"
@@ -138,6 +149,8 @@
                 android:padding="10dp" />
             <Button
                 android:id="@+id/icxAddress"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
                 android:layout_width="wrap_content"
                 android:layout_height="60dp"
                 android:background="@drawable/blank"
@@ -147,7 +160,8 @@
                 />
             <TextView
                 android:gravity="left"
-                android:layout_marginLeft="5dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="21dp"
                 android:text="책임 매니저 이름"
                 android:textSize="15dp"
                 android:textColor="#000000"
@@ -156,6 +170,8 @@
                 android:layout_height="wrap_content"
                 android:padding="10dp" />
             <Button
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
                 android:layout_width="wrap_content"
                 android:layout_height="60dp"
                 android:background="@drawable/blank"
@@ -165,7 +181,8 @@
                 />
             <TextView
                 android:gravity="left"
-                android:layout_marginLeft="5dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="21dp"
                 android:text="매니저 이메일"
                 android:textSize="15dp"
                 android:textColor="#000000"
@@ -174,6 +191,8 @@
                 android:layout_height="wrap_content"
                 android:padding="10dp" />
             <Button
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
                 android:layout_width="wrap_content"
                 android:layout_height="60dp"
                 android:background="@drawable/blank"
@@ -183,7 +202,8 @@
                 />
             <TextView
                 android:gravity="left"
-                android:layout_marginLeft="5dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="21dp"
                 android:text="상세 설명"
                 android:textSize="15dp"
                 android:textColor="#000000"
@@ -192,6 +212,8 @@
                 android:layout_height="wrap_content"
                 android:padding="10dp" />
             <Button
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
                 android:layout_width="wrap_content"
                 android:layout_height="60dp"
                 android:background="@drawable/blank"
@@ -199,20 +221,31 @@
                 android:textSize="12dp"
                 android:padding="20dp"
                 />
-            <Button
-                android:id="@+id/btnVC"
-                android:layout_width="380dp"
-                android:layout_height="100dp"
-                android:layout_marginStart="4dp"
-                android:layout_marginTop="20dp"
-                android:background="@drawable/acbtn"
-                android:fontFamily="@font/applesdgothicneoeb"
-                android:text="VC 발급 요청"
-                android:textAlignment="center"
-                android:textColor="#000000"
-                android:textSize="20dp" />
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/btnVC"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_width="380dp"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/acbtn"/>
+                <TextView
+                    android:layout_marginTop="55dp"
+                    android:layout_marginLeft="145dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="VC 발급 요청"
+                    android:fontFamily="@font/applesdgothicneoeb"
+                    android:textColor="#000000"
+                    android:textSize="20dp" />
+            </FrameLayout>
 
         </LinearLayout>
+
         </LinearLayout>
     </ScrollView>
 </LinearLayout>
