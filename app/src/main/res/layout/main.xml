@@ -92,9 +92,17 @@
                         android:fontFamily="@font/applesdgothicneob"
                         android:textSize="20dp"/>
                     <TextView
+                        android:id="@+id/premium"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="25dp"
+                        android:layout_marginLeft="30dp"
+                        android:text="프리미엄"
+                        android:fontFamily="@font/applesdgothicneob"
+                        android:textSize="20dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="22dp"
                         android:text="베스트"
                         android:fontFamily="@font/applesdgothicneob"
                         android:textSize="20dp"/>
@@ -103,13 +111,6 @@
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="22dp"
                         android:text="신상품"
-                        android:fontFamily="@font/applesdgothicneob"
-                        android:textSize="20dp"/>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="22dp"
-                        android:text="협동조합별"
                         android:fontFamily="@font/applesdgothicneob"
                         android:textSize="20dp"/>
                 </LinearLayout>
