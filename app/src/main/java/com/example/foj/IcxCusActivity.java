@@ -37,7 +37,7 @@ public class IcxCusActivity extends AppCompatActivity {
         done.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent (IcxCusActivity.this, IcxCusActivity.class);
+                Intent intent = new Intent (IcxCusActivity.this, Main.class);
                 startActivity(intent);
             }
         });
