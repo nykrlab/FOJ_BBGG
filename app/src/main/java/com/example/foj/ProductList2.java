@@ -20,7 +20,7 @@ public class ProductList2 extends Activity {
         btnhlbc.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent (ProductList2.this,AddProduct.class);
+                Intent intent = new Intent (ProductList2.this,ProductDetails2.class);
                 startActivity(intent);
             }
         });
