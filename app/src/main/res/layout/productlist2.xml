@@ -107,7 +107,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
                 android:layout_marginLeft="20dp"
-                android:text="가격                                           ICX 299,43"
+                android:text="가격                                            50,000원"
                 android:textSize="10dp"
                 android:fontFamily="@font/applesdgothicneob"
                 android:textColor="#8C8C8C"/>
@@ -192,7 +192,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
                 android:layout_marginLeft="20dp"
-                android:text="가격                                            ICX 250,63"
+                android:text="가격                                              35,000원"
                 android:textSize="10dp"
                 android:fontFamily="@font/applesdgothicneob"
                 android:textColor="#8C8C8C"/>
@@ -278,7 +278,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
                 android:layout_marginLeft="20dp"
-                android:text="가격                                             ICX 150,75"
+                android:text="가격                                              15,500원"
                 android:textSize="10dp"
                 android:fontFamily="@font/applesdgothicneob"
                 android:textColor="#8C8C8C"/>
