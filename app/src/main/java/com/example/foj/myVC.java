@@ -55,7 +55,7 @@ public class myVC extends Activity {
             @Override
             public void onClick(View v) {
 
-                mPostReference = FirebaseDatabase.getInstance().getReference().child("did:icon:03:0x987654321");
+                mPostReference = FirebaseDatabase.getInstance().getReference().child("did:icon:03:0x987654321").child("VC");
                 mPostReference.updateChildren(childUpdates);
 
                 Intent intent = new Intent(myVC.this,profileActivity.class);

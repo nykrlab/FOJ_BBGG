@@ -52,7 +52,7 @@ public class vctoVP extends AppCompatActivity {
 
         /* seungho */
         items = new ArrayList<>();
-        mPostReference = FirebaseDatabase.getInstance().getReference().child("did:icon:03:0x987654321");
+        mPostReference = FirebaseDatabase.getInstance().getReference().child("did:icon:03:0x987654321").child("VC");
         mPostReference.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
