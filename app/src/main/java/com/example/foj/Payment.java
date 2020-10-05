@@ -8,17 +8,27 @@ import android.widget.Button;
 
 
 public class Payment extends Activity {
-    Button btnhome;
+    Button btnhome,btnordrlist;
 
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.payment);
 
         btnhome=findViewById(R.id.btnhome);
+        btnordrlist = findViewById(R.id.btnordrlist);
+
         btnhome.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(Payment.this,Main.class);
+                startActivity(intent);
+            }
+        });
+
+        btnordrlist.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Payment.this,OrderList.class);
                 startActivity(intent);
             }
         });
