@@ -52,11 +52,12 @@
             android:layout_marginBottom="1dp"
             android:elevation="6dp"
             android:orientation="vertical">
+            /* 생산자 이름 >> id = name */
             <TextView
                 android:gravity="left"
                 android:layout_marginTop="16dp"
                 android:layout_marginLeft="21dp"
-                android:text="농가명"
+                android:text="생산자 이름"
                 android:textSize="15dp"
                 android:textColor="#000000"
                 android:fontFamily="@font/applesdgothicneoeb"
@@ -70,14 +71,64 @@
                 android:layout_width="wrap_content"
                 android:layout_height="60dp"
                 android:background="@drawable/blank"
-                android:text="제주 D 농장"
+                android:text="김제주"
                 android:textSize="12dp"
                 />
+            /* 생산자 이름 */
+
+            /* 농가 이름 >> id = fname */
             <TextView
                 android:gravity="left"
                 android:layout_marginTop="16dp"
                 android:layout_marginLeft="21dp"
-                android:text="농가 주소"
+                android:text="농가 이름"
+                android:textSize="15dp"
+                android:textColor="#000000"
+                android:fontFamily="@font/applesdgothicneoeb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp" />
+            <Button
+                android:id="@+id/fname"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:background="@drawable/blank"
+                android:text="제주 D 농장"
+                android:textSize="12dp"
+                />
+            /* 농가 이름 */
+
+            /* 소속 조합 >> id = corp */
+            <TextView
+                android:gravity="left"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="21dp"
+                android:text="소속 조합"
+                android:textSize="15dp"
+                android:textColor="#000000"
+                android:fontFamily="@font/applesdgothicneoeb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp" />
+            <Button
+                android:id="@+id/corp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:background="@drawable/blank"
+                android:text="제주 협동조합"
+                android:textSize="12dp"
+                />
+            /* 농가 이름 */
+
+            <TextView
+                android:gravity="left"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="21dp"
+                android:text="사업장 소재지"
                 android:textSize="15dp"
                 android:textColor="#000000"
                 android:fontFamily="@font/applesdgothicneoeb"
