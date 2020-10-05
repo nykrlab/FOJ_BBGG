@@ -32,8 +32,17 @@ public class myVP extends Activity {
         Map<String, Object> childUpdates = new HashMap<>();
         childUpdates.put("VP", VP);
 
-        mPostReference = FirebaseDatabase.getInstance().getReference().child("did:icon:03:0x987654321");
+        mPostReference = FirebaseDatabase.getInstance().getReference().child("did:icon:03:0x987654321").child("VP");
         mPostReference.updateChildren(childUpdates);
 
     }
+
+    /* seungho */
+    @Override
+    public void onBackPressed() {
+        Intent intent = new Intent(getApplicationContext(), MyaccountActivity.class);
+        startActivity(intent);
+        super.onBackPressed();
+    }
+    /* seungho */
 }

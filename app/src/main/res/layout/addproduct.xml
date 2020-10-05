@@ -251,41 +251,41 @@
                     android:fontFamily="@font/applesdgothicneoeb"/>
             </FrameLayout>
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:gravity="left"
-                android:layout_marginTop="15dp"
-                android:layout_marginLeft="45dp"
-                android:layout_marginBottom="10dp"
-                android:text="VC 사용 (판매자 인증용)"
-                android:textSize="18dp"
-                android:textColor="#555555"
-                android:fontFamily="@font/applesdgothicneoeb"/>
-            <FrameLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
-                <ImageView
-                    android:layout_width="370dp"
-                    android:layout_height="60dp"
-                    android:layout_marginLeft="25dp"
-                    android:background="@drawable/blank"/>
-                <ImageView
-                    android:layout_width="20dp"
-                    android:layout_height="20dp"
-                    android:background="@drawable/check"
-                    android:layout_marginLeft="335dp"
-                    android:layout_marginTop="20dp"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="VC"
-                    android:textSize="15dp"
-                    android:layout_marginLeft="195dp"
-                    android:layout_marginTop="20dp"
-                    android:textColor="#555555"
-                    android:fontFamily="@font/applesdgothicneom"/>
-            </FrameLayout>
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:gravity="left"-->
+<!--                android:layout_marginTop="15dp"-->
+<!--                android:layout_marginLeft="45dp"-->
+<!--                android:layout_marginBottom="10dp"-->
+<!--                android:text="VC 사용 (판매자 인증용)"-->
+<!--                android:textSize="18dp"-->
+<!--                android:textColor="#555555"-->
+<!--                android:fontFamily="@font/applesdgothicneoeb"/>-->
+<!--            <FrameLayout-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content">-->
+<!--                <ImageView-->
+<!--                    android:layout_width="370dp"-->
+<!--                    android:layout_height="60dp"-->
+<!--                    android:layout_marginLeft="25dp"-->
+<!--                    android:background="@drawable/blank"/>-->
+<!--                <ImageView-->
+<!--                    android:layout_width="20dp"-->
+<!--                    android:layout_height="20dp"-->
+<!--                    android:background="@drawable/check"-->
+<!--                    android:layout_marginLeft="335dp"-->
+<!--                    android:layout_marginTop="20dp"/>-->
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="VC"-->
+<!--                    android:textSize="15dp"-->
+<!--                    android:layout_marginLeft="195dp"-->
+<!--                    android:layout_marginTop="20dp"-->
+<!--                    android:textColor="#555555"-->
+<!--                    android:fontFamily="@font/applesdgothicneom"/>-->
+<!--            </FrameLayout>-->
 
             <TextView
                 android:layout_width="wrap_content"
@@ -294,7 +294,7 @@
                 android:layout_marginTop="15dp"
                 android:layout_marginLeft="45dp"
                 android:layout_marginBottom="10dp"
-                android:text="VP 사용 (소비자 검증용)"
+                android:text="VP 등록 (소비자 검증용)"
                 android:textSize="18dp"
                 android:textColor="#555555"
                 android:fontFamily="@font/applesdgothicneoeb"/>
@@ -302,6 +302,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content">
                 <ImageView
+                    android:id="@+id/ivRegister"
                     android:layout_width="370dp"
                     android:layout_height="60dp"
                     android:layout_marginLeft="25dp"
@@ -313,6 +314,7 @@
                     android:layout_marginLeft="335dp"
                     android:layout_marginTop="20dp"/>
                 <TextView
+                    android:id="@+id/tvResult"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="VP"
