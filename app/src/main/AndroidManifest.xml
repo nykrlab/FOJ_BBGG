@@ -44,6 +44,10 @@
         <activity android:name=".Buying1"></activity>
         <activity android:name=".Buying2"></activity>
         <activity android:name=".Payment"></activity>
+        <activity android:name=".Confirm"></activity>
+        <activity android:name=".Main2"></activity>
+        <activity android:name=".Myaccount2"></activity>
+        <activity android:name=".Wallet"></activity>
 
     </application>
 
