@@ -21,15 +21,13 @@
             </intent-filter>
         </activity>
         <activity android:name=".FirstActivity"/>
-        <activity android:name=".LoginActivity" />
+        <activity android:name=".LoginActivity" /> 
         <activity android:name=".RegCusActivity" />
         <activity android:name=".RegSelActivity" />
         <activity android:name=".IcxCusActivity" />
         <activity android:name=".IcxSelActivity" />
         <activity android:name=".RegDid" />
-        <activity android:name=".MyaccountActivity">
-
-        </activity>
+        <activity android:name=".MyaccountActivity"></activity>
         <activity android:name=".profileActivity"></activity>
         <activity android:name=".VcActivity"></activity>
         <activity android:name=".myVC"></activity>
@@ -40,6 +38,12 @@
         <activity android:name=".AddProduct"></activity>
         <activity android:name=".OrderDetails"></activity>
         <activity android:name=".ProductList2"></activity>
+        <activity android:name=".Main"></activity>
+        <activity android:name=".ProductDetails"></activity>
+        <activity android:name=".ProductDetails2"></activity>
+        <activity android:name=".Buying1"></activity>
+        <activity android:name=".Buying2"></activity>
+        <activity android:name=".Payment"></activity>
 
     </application>
 
