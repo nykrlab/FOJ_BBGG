@@ -20,7 +20,7 @@
         />
 
     <LinearLayout
-        android:id="@+id/btnhlb"
+        android:id="@+id/btnhlb_c"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:layout_width="match_parent"
@@ -32,62 +32,93 @@
             android:layout_marginLeft="20dp"
             android:layout_width="120dp"
             android:layout_height="120dp"
-            android:background="@drawable/hallabong"></ImageView>
+            android:background="@drawable/yuja"></ImageView>
+
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="25dp"
+                    android:fontFamily="@font/applesdgothicneoeb"
+                    android:text="SDG1345KJD"
+                    android:textColor="#000000"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginTop="25dp"
+                    android:fontFamily="@font/applesdgothicneoeb"
+                    android:text="구매 확정"
+                    android:textColor="#03A9F4"
+                    android:textSize="13dp" />
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="27dp"
+                    android:background="@drawable/chckgrdnt" />
+            </LinearLayout>
+
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="25dp"
                 android:layout_marginLeft="20dp"
-                android:text="LQNSU346JK"
-                android:textSize="15dp"
-                android:fontFamily="@font/applesdgothicneoeb"
-                android:textColor="#000000"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
-                android:layout_marginLeft="20dp"
-                android:text="주문 일자 : 2020/10/07"
-                android:textSize="10dp"
                 android:fontFamily="@font/applesdgothicneob"
-                android:textColor="#8C8C8C"/>
+                android:text="주문 일자 : 2020/10/07"
+                android:textColor="#8C8C8C"
+                android:textSize="10dp" />
+
             <ImageView
                 android:layout_width="200dp"
                 android:layout_height="10dp"
-                android:layout_marginTop="5dp"
                 android:layout_marginLeft="15dp"
-                android:background="@drawable/dotline"/>
+                android:layout_marginTop="5dp"
+                android:background="@drawable/dotline" />
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
                 android:layout_marginTop="10dp"
-                android:layout_marginLeft="20dp"
-                android:text="배송 현황                                            배송 중"
-                android:textSize="10dp"
                 android:fontFamily="@font/applesdgothicneob"
-                android:textColor="#8C8C8C"/>
+                android:text="배송 현황                                          배송 완료"
+                android:textColor="#8C8C8C"
+                android:textSize="10dp" />
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
                 android:layout_marginLeft="20dp"
-                android:text="상품 정보                                        1개의 상품"
-                android:textSize="10dp"
+                android:layout_marginTop="5dp"
                 android:fontFamily="@font/applesdgothicneob"
-                android:textColor="#8C8C8C"/>
+                android:text="상품 정보                                         1개의 상품"
+                android:textColor="#8C8C8C"
+                android:textSize="10dp" />
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
                 android:layout_marginLeft="20dp"
-                android:text="가격                                             ICX 299,43"
-                android:textSize="10dp"
+                android:layout_marginTop="5dp"
                 android:fontFamily="@font/applesdgothicneob"
-                android:textColor="#8C8C8C"/>
+                android:text="결제 가격                                         18,000원"
+                android:textColor="#8C8C8C"
+                android:textSize="10dp" />
         </LinearLayout>
     </LinearLayout>
 
@@ -109,21 +140,35 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
-                <TextView
+                <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="25dp"
-                    android:layout_marginLeft="20dp"
-                    android:text="SDG1345KJD"
-                    android:textSize="15dp"
-                    android:fontFamily="@font/applesdgothicneoeb"
-                    android:textColor="#000000"/>
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="25dp"
+                        android:layout_marginLeft="20dp"
+                        android:text="LQNSU346JK"
+                        android:textSize="15dp"
+                        android:fontFamily="@font/applesdgothicneoeb"
+                        android:textColor="#000000"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="25dp"
+                        android:layout_marginLeft="40dp"
+                        android:text="구매 확정"
+                        android:textSize="13dp"
+                        android:fontFamily="@font/applesdgothicneoeb"
+                        android:textColor="#CFCFCF"/>
+                </LinearLayout>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
                     android:layout_marginLeft="20dp"
-                    android:text="주문 일자 : 2020/10/01"
+                    android:text="주문 일자 : 2020/10/07"
                     android:textSize="10dp"
                     android:fontFamily="@font/applesdgothicneob"
                     android:textColor="#8C8C8C"/>
@@ -138,7 +183,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
                     android:layout_marginLeft="20dp"
-                    android:text="배송 현황                                          배송 완료"
+                    android:text="배송 현황                                            배송 중"
                     android:textSize="10dp"
                     android:fontFamily="@font/applesdgothicneob"
                     android:textColor="#8C8C8C"/>
@@ -147,7 +192,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
                     android:layout_marginLeft="20dp"
-                    android:text="상품 정보                                        2개의 상품"
+                    android:text="상품 정보                                        1개의 상품"
                     android:textSize="10dp"
                     android:fontFamily="@font/applesdgothicneob"
                     android:textColor="#8C8C8C"/>
@@ -156,7 +201,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
                     android:layout_marginLeft="20dp"
-                    android:text="가격                                             ICX 150,03"
+                    android:text="결제 가격                                        62,000원"
                     android:textSize="10dp"
                     android:fontFamily="@font/applesdgothicneob"
                     android:textColor="#8C8C8C"/>
@@ -181,15 +226,35 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical">
-            <TextView
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="25dp"
-                android:layout_marginLeft="20dp"
-                android:text="SCL614UKJK"
-                android:textSize="15dp"
-                android:fontFamily="@font/applesdgothicneoeb"
-                android:textColor="#000000"/>
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginLeft="20dp"
+                    android:text="SCL614UKJK"
+                    android:textSize="15dp"
+                    android:fontFamily="@font/applesdgothicneoeb"
+                    android:textColor="#000000"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginLeft="35dp"
+                    android:text="구매 확정"
+                    android:textSize="13dp"
+                    android:fontFamily="@font/applesdgothicneoeb"
+                    android:textColor="#000000"/>
+                <ImageView
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_marginTop="29dp"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/chckblk"/>
+            </LinearLayout>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -219,7 +284,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
                 android:layout_marginLeft="20dp"
-                android:text="상품 정보                                        1개의 상품"
+                android:text="상품 정보                                        2개의 상품"
                 android:textSize="10dp"
                 android:fontFamily="@font/applesdgothicneob"
                 android:textColor="#8C8C8C"/>
@@ -228,7 +293,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
                 android:layout_marginLeft="20dp"
-                android:text="가격                                             ICX 100,75"
+                android:text="결제 가격                                        20,000원"
                 android:textSize="10dp"
                 android:fontFamily="@font/applesdgothicneob"
                 android:textColor="#8C8C8C"/>
