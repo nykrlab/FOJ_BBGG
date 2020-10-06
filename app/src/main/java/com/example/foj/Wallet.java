@@ -20,11 +20,30 @@ import foundation.icon.icx.transport.http.HttpProvider;
 import static java.lang.Math.pow;
 
 public class Wallet extends Activity {
+    ImageView btncharge,btnrec;
 
 
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.wallet);
+
+        btncharge = findViewById(R.id.btncharge);
+        btnrec = findViewById(R.id.btnrec);
+
+        btncharge.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Wallet.this,Charge.class);
+                startActivity(intent);
+            }
+        });
+        btnrec.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Wallet.this,Record.class);
+                startActivity(intent);
+            }
+        });
 
     }
 }
