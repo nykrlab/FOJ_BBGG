@@ -82,7 +82,7 @@
         android:orientation="horizontal">
         <Button
             android:id="@+id/register"
-            android:text="ICX 계좌 만들기"
+            android:text="회원가입 완료"
             android:fontFamily="@font/applesdgothicneoeb"
             android:textColor="#000210"
             android:layout_width="0dp"

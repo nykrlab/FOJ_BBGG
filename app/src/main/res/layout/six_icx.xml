@@ -31,7 +31,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="ICX 계좌가 생성되었습니다"
+        android:text="회원가입이 완료되었습니다."
         android:fontFamily="@font/applesdgothicneoeb"
         android:textSize="25sp"
         android:textColor="#000000"
@@ -39,15 +39,24 @@
         android:gravity="left"
         />
 
+<!--    <EditText-->
+<!--        android:id="@+id/username"-->
+<!--        android:gravity="left"-->
+<!--        android:text="0x65dFefEAADE98ger23"-->
+<!--        android:fontFamily="@font/poppinsregular"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content" />-->
 
-    <EditText
-        android:id="@+id/username"
-        android:gravity="left"
-        android:text="0x65dFefEAADE98ger23"
-        android:fontFamily="@font/poppinsregular"
+    <TextView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-
+        android:layout_height="wrap_content"
+        android:text="판매자인 경우, 판매 상품의 품질 인증을 위해 &#10;DID 발급이 필요합니다."
+        android:fontFamily="@font/applesdgothicneol"
+        android:textSize="15sp"
+        android:textColor="#000000"
+        android:padding="10dp"
+        android:gravity="left"
+        />
 
     <LinearLayout
         android:layout_marginTop="24dp"

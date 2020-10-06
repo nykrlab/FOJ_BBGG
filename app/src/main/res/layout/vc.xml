@@ -212,28 +212,28 @@
                 android:textSize="12dp"
                 android:padding="20dp"
                 />
-            <TextView
-                android:gravity="left"
-                android:layout_marginTop="16dp"
-                android:layout_marginLeft="21dp"
-                android:text="농가 ICX 계좌"
-                android:textSize="15dp"
-                android:textColor="#000000"
-                android:fontFamily="@font/applesdgothicneoeb"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="10dp" />
-            <Button
-                android:id="@+id/icxAddress"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_width="wrap_content"
-                android:layout_height="60dp"
-                android:background="@drawable/blank"
-                android:text="hxde6c30f9ac968f637c4bfea0d13ce5177"
-                android:textSize="12dp"
-                android:padding="20dp"
-                />
+<!--            <TextView-->
+<!--                android:gravity="left"-->
+<!--                android:layout_marginTop="16dp"-->
+<!--                android:layout_marginLeft="21dp"-->
+<!--                android:text="농가 ICX 계좌"-->
+<!--                android:textSize="15dp"-->
+<!--                android:textColor="#000000"-->
+<!--                android:fontFamily="@font/applesdgothicneoeb"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:padding="10dp" />-->
+<!--            <Button-->
+<!--                android:id="@+id/icxAddress"-->
+<!--                android:layout_marginLeft="16dp"-->
+<!--                android:layout_marginRight="16dp"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="60dp"-->
+<!--                android:background="@drawable/blank"-->
+<!--                android:text="hxde6c30f9ac968f637c4bfea0d13ce5177"-->
+<!--                android:textSize="12dp"-->
+<!--                android:padding="20dp"-->
+<!--                />-->
             <TextView
                 android:gravity="left"
                 android:layout_marginTop="16dp"
