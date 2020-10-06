@@ -22,9 +22,21 @@ public class RegSelActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent (RegSelActivity.this, IcxSelActivity.class);
                 startActivity(intent);
+                /* seungho */
+                finish();
+                /* seungho */
             }
         });
 
 
     }
+
+    /* seungho */
+    @Override
+    public void onBackPressed() {
+        Intent intent = new Intent(getApplicationContext(), FirstActivity.class);
+        startActivity(intent);
+        super.onBackPressed();
+    }
+    /* seungho */
 }
