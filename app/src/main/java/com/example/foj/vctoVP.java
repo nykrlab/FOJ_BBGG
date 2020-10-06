@@ -26,7 +26,9 @@ import org.bouncycastle.util.encoders.Hex;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Date;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.concurrent.ExecutionException;
 
 import foundation.icon.did.Presentation;
@@ -87,9 +89,14 @@ public class vctoVP extends AppCompatActivity {
                     Toast.makeText(getApplicationContext(), "Just wait a moment please", Toast.LENGTH_SHORT).show();
                 }
                 else {
-                    Intent intent = new Intent(vctoVP.this,myVP.class);
-                    intent.putExtra("VP", VP);
-                    startActivity(intent);
+                    Map<String, Object> childUpdates = new HashMap<>();
+                    childUpdates.put("VP", VP);
+
+                    mPostReference = FirebaseDatabase.getInstance().getReference().child("did:icon:03:0x987654321").child("VP");
+                    mPostReference.updateChildren(childUpdates);
+
+                    Toast.makeText(getApplicationContext(), "성공적으로 등록되었습니다.", Toast.LENGTH_SHORT).show();
+                    onBackPressed();
                 }
                 /* seungho */
 
@@ -109,7 +116,7 @@ public class vctoVP extends AppCompatActivity {
     // context - 어플리케이션 전역 환경 정보에 대한 Interface // 여기서는 this
     // resource - view로 매핑될 리소스 id / textview 위젯으로 구성된 ListView 아이템 리소스 id
     // objects - 배열로 선언된 사용자 데이터
-    final String[] subject_select = {"농가명","농가 주소","사업자번호","농가 이메일","생산보고서","농가 ICX 계좌","상세 설명"};
+    final String[] subject_select = {"농가명","농가 주소","사업자번호","농가 이메일","생산보고서",/*"농가 ICX 계좌",*/"상세 설명"};
 
     /* seungho */
     class issueVP extends AsyncTask<Void, Void, String> {

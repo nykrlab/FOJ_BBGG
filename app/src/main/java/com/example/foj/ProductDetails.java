@@ -71,19 +71,16 @@ public class ProductDetails extends Activity {
         mPostReference.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-
                 items.clear();
                 for(DataSnapshot postSnapshot : dataSnapshot.getChildren()) {
                     String item = (String) postSnapshot.getValue();
                     items.add(item);
                 }
                 presentation = items.get(0);
-
             }
             @Override
             public void onCancelled(@NonNull DatabaseError databaseError) {}
         });
-
 
         btnsave = findViewById(R.id.btnsave);
         btnsave.setOnClickListener(new View.OnClickListener() {
@@ -91,15 +88,13 @@ public class ProductDetails extends Activity {
             public void onClick(View v) {
 
                 try {
-
                     Boolean result = new VerifyVP(presentation).execute().get();
                     if (result == Boolean.TRUE) {
-                        Toast.makeText(getApplicationContext(), "성공적으로 검증을 마쳤습니다.", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getApplicationContext(), "신뢰할 수 있는 판매자입니다.", Toast.LENGTH_SHORT).show();
                     }
                     else {
                         Toast.makeText(getApplicationContext(), "검증에 실패했습니다.", Toast.LENGTH_SHORT).show();
                     }
-
                 } catch (ExecutionException e) {
                     e.printStackTrace();
                 } catch (InterruptedException e) {
@@ -115,10 +110,22 @@ public class ProductDetails extends Activity {
             public void onClick(View v) {
                 Intent intent = new Intent(ProductDetails.this, Buying1.class);
                 startActivity(intent);
+                /* seungho */
+                finish();
+                /* seungho */
             }
         });
 
     }
+
+    /* seungho */
+    @Override
+    public void onBackPressed() {
+        Intent intent = new Intent(getApplicationContext(), Main.class);
+        startActivity(intent);
+        super.onBackPressed();
+    }
+    /* seungho */
 
     /* seungho */
     class VerifyVP extends AsyncTask<Void, Void, Boolean> {

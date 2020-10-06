@@ -57,47 +57,14 @@ public class AddProduct extends Activity {
         ivRegister = findViewById(R.id.ivRegister);
         tvResult = findViewById(R.id.tvResult);
 
-        items = new ArrayList<>();
-        mPostReference = FirebaseDatabase.getInstance().getReference().child("did:icon:03:0x987654321").child("VC");
-        mPostReference.addValueEventListener(new ValueEventListener() {
-            @Override
-            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-
-                items.clear();
-                for(DataSnapshot postSnapshot : dataSnapshot.getChildren()) {
-                    String item = (String) postSnapshot.getValue();
-                    items.add(item);
-                }
-
-                try {
-                    VP = new issueVP(items).execute().get();
-                } catch (ExecutionException e) {
-                    e.printStackTrace();
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
-
-            }
-            @Override
-            public void onCancelled(@NonNull DatabaseError databaseError) {}
-        });
-
         ivRegister.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
-                Map<String, Object> childUpdates = new HashMap<>();
-                childUpdates.put("VP", VP);
-
-                mPostReference = FirebaseDatabase.getInstance().getReference().child("did:icon:03:0x987654321").child("VP");
-                mPostReference.updateChildren(childUpdates);
-
-                tvResult.setText("발급 완료");
-                Toast.makeText(getApplicationContext(), "성공적으로 등록되었습니다.", Toast.LENGTH_SHORT).show();
-
+                Intent intent = new Intent (AddProduct.this,vctoVP.class);
+                startActivity(intent);
+                // finish() X
             }
         });
-
         /* seungho */
 
         btnAdd = findViewById(R.id.btnAdd);
@@ -106,11 +73,23 @@ public class AddProduct extends Activity {
             public void onClick(View v) {
                 Intent intent = new Intent (AddProduct.this,ProductList2.class);
                 startActivity(intent);
+                /* seungho */
+                finish();
+                /* seungho */
             }
         });
 
 
     }
+
+    /* seungho */
+    @Override
+    public void onBackPressed() {
+        Intent intent = new Intent(getApplicationContext(), ProductList1.class);
+        startActivity(intent);
+        super.onBackPressed();
+    }
+    /* seungho */
 
     /* seungho */
     class issueVP extends AsyncTask<Void, Void, String> {
