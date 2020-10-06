@@ -62,7 +62,7 @@ public class VcActivity extends Activity {
         btnLicence = findViewById(R.id.licenceNumber);
         btnReport = findViewById(R.id.report);
         btnEmail = findViewById(R.id.email);
-        btnIcxAddress = findViewById(R.id.icxAddress);
+//        btnIcxAddress = findViewById(R.id.icxAddress);
         /* seungho */
 
         btnVC = findViewById(R.id.btnVC);
@@ -88,8 +88,8 @@ public class VcActivity extends Activity {
                     email = (String) btnEmail.getText();
                     String emailVC = new issueVC("email", email).execute().get();
 
-                    icxAddress = (String) btnIcxAddress.getText();
-                    String icxAddressVC = new issueVC("icxAddress", icxAddress).execute().get();
+//                    icxAddress = (String) btnIcxAddress.getText();
+//                    String icxAddressVC = new issueVC("icxAddress", icxAddress).execute().get();
 
                     Intent intent = new Intent(VcActivity.this,myVC.class);
                     intent.putExtra("nameVC", nameVC);
@@ -97,8 +97,11 @@ public class VcActivity extends Activity {
                     intent.putExtra("licenceVC", licenceVC);
                     intent.putExtra("reportVC", reportVC);
                     intent.putExtra("emailVC", emailVC);
-                    intent.putExtra("icxAddressVC", icxAddressVC);
+//                    intent.putExtra("icxAddressVC", icxAddressVC);
                     startActivity(intent);
+                    /* seungho */
+                    finish();
+                    /* seungho */
 
                 } catch (ExecutionException e) {
                     e.printStackTrace();
@@ -110,6 +113,15 @@ public class VcActivity extends Activity {
         });
 
     }
+
+    /* seungho */
+    @Override
+    public void onBackPressed() {
+        Intent intent = new Intent(getApplicationContext(), profileActivity.class);
+        startActivity(intent);
+        super.onBackPressed();
+    }
+    /* seungho */
 
     /* seungho */
     class issueVC extends AsyncTask<Void, Void, String> {
