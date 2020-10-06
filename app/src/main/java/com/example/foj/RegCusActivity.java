@@ -16,15 +16,26 @@ public class RegCusActivity extends AppCompatActivity {
         setContentView(R.layout.three_reg);
 
         register = findViewById(R.id.register);
-
         register.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent (RegCusActivity.this, IcxCusActivity.class);
+                Intent intent = new Intent (RegCusActivity.this, Main.class);
                 startActivity(intent);
+                /* seungho */
+                finish();
+                /* seungho */
             }
         });
 
 
     }
+
+    /* seungho */
+    @Override
+    public void onBackPressed() {
+        Intent intent = new Intent(getApplicationContext(), FirstActivity.class);
+        startActivity(intent);
+        super.onBackPressed();
+    }
+    /* seungho */
 }

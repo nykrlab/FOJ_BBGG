@@ -72,7 +72,6 @@ public class RegDid extends AppCompatActivity {
         try {
             document = new RegisterDid().execute().get();
             dids.setText(document.getId());
-            Toast.makeText(getApplicationContext(), dids.getText(), Toast.LENGTH_LONG).show();
         } catch (ExecutionException e) {
             e.printStackTrace();
         } catch (InterruptedException e) {
@@ -83,12 +82,24 @@ public class RegDid extends AppCompatActivity {
         done.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent (RegDid.this, RegDid.class);
+                Intent intent = new Intent (RegDid.this, Main.class);
                 startActivity(intent);
+                /* seungho */
+                finish();
+                /* seungho */
             }
         });
 
     }
+
+    /* seungho */
+    @Override
+    public void onBackPressed() {
+        Intent intent = new Intent(getApplicationContext(), IcxSelActivity.class);
+        startActivity(intent);
+        super.onBackPressed();
+    }
+    /* seungho */
 
     /* seungho */
     class RegisterDid extends AsyncTask<Void, Void, Document> {
@@ -106,7 +117,7 @@ public class RegDid extends AppCompatActivity {
             try {
 
                 Document document = null;
-                for(int i = 0; i < 1; i++) {
+                for(int i = 1; i < 2; i++) {
 
                     KeyWallet wallet = null;
                     String id = null, keyId = null, param = null;

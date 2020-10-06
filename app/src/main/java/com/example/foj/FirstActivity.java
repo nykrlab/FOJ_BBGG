@@ -25,6 +25,9 @@ public class FirstActivity extends Activity {
             public void onClick(View v) {
                 Intent intent = new Intent (FirstActivity.this,LoginActivity.class);
                 startActivity(intent);
+                /* seungho */
+                finish();
+                /* seungho */
             }
         });
 
@@ -33,6 +36,9 @@ public class FirstActivity extends Activity {
             public void onClick(View v) {
                 Intent intent = new Intent(FirstActivity.this, RegCusActivity.class);
                 startActivity(intent);
+                /* seungho */
+                finish();
+                /* seungho */
             }
         });
 
@@ -41,7 +47,11 @@ public class FirstActivity extends Activity {
             public void onClick(View v) {
                 Intent intent = new Intent(FirstActivity.this,RegSelActivity.class);
                 startActivity(intent);
+                /* seungho */
+                finish();
+                /* seungho */
             }
         });
+
     }
 }
