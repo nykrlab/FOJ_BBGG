@@ -48,6 +48,9 @@
         <activity android:name=".Main2"></activity>
         <activity android:name=".Myaccount2"></activity>
         <activity android:name=".Wallet"></activity>
+        <activity android:name=".Charge"></activity>
+        <activity android:name=".ChargeDone"></activity>
+        <activity android:name=".Record"></activity>
 
     </application>
 
