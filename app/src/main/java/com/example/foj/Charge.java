@@ -27,13 +27,24 @@ public class Charge extends Activity {
         setContentView(R.layout.charge);
 
         btnbuy1 = findViewById(R.id.btnbuy1);
-
         btnbuy1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(Charge.this,ChargeDone.class);
                 startActivity(intent);
+                /* seungho */
+                finish();
+                /* seungho */
             }
         });
+
     }
+
+    /* seungho */
+    public void onBackPressed() {
+        Intent intent = new Intent(getApplicationContext(), Wallet.class);
+        startActivity(intent);
+        super.onBackPressed();
+    }
+    /* seungho */
 }

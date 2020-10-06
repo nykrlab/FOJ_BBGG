@@ -21,9 +21,21 @@ public class ProductList1 extends Activity {
             public void onClick(View v) {
                 Intent intent = new Intent (ProductList1.this,AddProduct.class);
                 startActivity(intent);
+                /* seungho */
+                finish();
+                /* seungho */
             }
         });
 
 
     }
+
+    /* seungho */
+    @Override
+    public void onBackPressed() {
+        Intent intent = new Intent(getApplicationContext(), Myaccount2.class);
+        startActivity(intent);
+        super.onBackPressed();
+    }
+    /* seungho */
 }

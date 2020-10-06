@@ -22,7 +22,6 @@ import static java.lang.Math.pow;
 public class Wallet extends Activity {
     ImageView btncharge,btnrec;
 
-
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.wallet);
@@ -35,6 +34,9 @@ public class Wallet extends Activity {
             public void onClick(View v) {
                 Intent intent = new Intent(Wallet.this,Charge.class);
                 startActivity(intent);
+                /* seungho */
+                finish();
+                /* seungho */
             }
         });
         btnrec.setOnClickListener(new View.OnClickListener() {
@@ -42,8 +44,19 @@ public class Wallet extends Activity {
             public void onClick(View v) {
                 Intent intent = new Intent(Wallet.this,Record.class);
                 startActivity(intent);
+                /* seungho */
+                finish();
+                /* seungho */
             }
         });
 
     }
+
+    /* seungho */
+    public void onBackPressed() {
+        Intent intent = new Intent(getApplicationContext(), Myaccount2.class);
+        startActivity(intent);
+        super.onBackPressed();
+    }
+    /* seungho */
 }

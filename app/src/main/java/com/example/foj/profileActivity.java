@@ -17,14 +17,16 @@ public class profileActivity extends Activity {
 
         btnmyprfl = findViewById(R.id.btnmyprfl);
         btnvc = findViewById(R.id.btnvc);
-        btnvp = findViewById(R.id.btnvp);
-
+//        btnvp = findViewById(R.id.btnvp);
 
         btnmyprfl.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent (profileActivity.this,LoginActivity.class);
+                Intent intent = new Intent (profileActivity.this,profileActivity.class);
                 startActivity(intent);
+                /* seungho */
+                finish();
+                /* seungho */
             }
         });
         btnvc.setOnClickListener(new View.OnClickListener() {
@@ -32,15 +34,27 @@ public class profileActivity extends Activity {
             public void onClick(View v) {
                 Intent intent = new Intent (profileActivity.this,VcActivity.class);
                 startActivity(intent);
+                /* seungho */
+                finish();
+                /* seungho */
             }
         });
-        btnvp.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent (profileActivity.this,vctoVP.class);
-                startActivity(intent);
-            }
-        });
+//        btnvp.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Intent intent = new Intent (profileActivity.this,vctoVP.class);
+//                startActivity(intent);
+//            }
+//        });
 
     }
+
+    /* seungho */
+    @Override
+    public void onBackPressed() {
+        Intent intent = new Intent(getApplicationContext(), Myaccount2.class);
+        startActivity(intent);
+        super.onBackPressed();
+    }
+    /* seungho */
 }

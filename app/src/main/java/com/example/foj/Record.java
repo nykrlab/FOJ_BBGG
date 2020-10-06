@@ -27,13 +27,24 @@ public class Record extends Activity {
         setContentView(R.layout.record);
 
         btnok = findViewById(R.id.btnok);
-
         btnok.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(Record.this,Wallet.class);
                 startActivity(intent);
+                /* seungho */
+                finish();
+                /* seungho */
             }
         });
+
     }
+
+    /* seungho */
+    public void onBackPressed() {
+        Intent intent = new Intent(getApplicationContext(), Wallet.class);
+        startActivity(intent);
+        super.onBackPressed();
+    }
+    /* seungho */
 }

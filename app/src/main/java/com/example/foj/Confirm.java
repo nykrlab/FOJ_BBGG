@@ -24,9 +24,21 @@ public class Confirm extends Activity {
             public void onClick(View v) {
                 Intent intent = new Intent(Confirm.this,Main.class);
                 startActivity(intent);
+                /* seungho */
+                finish();
+                /* seungho */
             }
         });
 
 
     }
+
+    /* seungho */
+    @Override
+    public void onBackPressed() {
+        Intent intent = new Intent(getApplicationContext(), OrderDetails.class);
+        startActivity(intent);
+        super.onBackPressed();
+    }
+    /* seungho */
 }

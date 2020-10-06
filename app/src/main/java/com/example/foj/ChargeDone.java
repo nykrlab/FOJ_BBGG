@@ -35,6 +35,9 @@ public class ChargeDone extends Activity {
             public void onClick(View v) {
                 Intent intent = new Intent(ChargeDone.this,Main.class);
                 startActivity(intent);
+                /* seungho */
+                finish();
+                /* seungho */
             }
         });
 
@@ -43,7 +46,19 @@ public class ChargeDone extends Activity {
             public void onClick(View v) {
                 Intent intent = new Intent(ChargeDone.this,Wallet.class);
                 startActivity(intent);
+                /* seungho */
+                finish();
+                /* seungho */
             }
         });
+
     }
+
+    /* seungho */
+    public void onBackPressed() {
+        Intent intent = new Intent(getApplicationContext(), Wallet.class);
+        startActivity(intent);
+        super.onBackPressed();
+    }
+    /* seungho */
 }

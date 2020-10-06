@@ -22,10 +22,20 @@ public class Buying2 extends Activity {
             public void onClick(View v) {
                 Intent intent = new Intent(Buying2.this,Payment.class);
                 startActivity(intent);
+                /* seungho */
+                finish();
+                /* seungho */
             }
         });
 
-
-
     }
+
+    /* seungho */
+    @Override
+    public void onBackPressed() {
+        Intent intent = new Intent(getApplicationContext(), ProductDetails2.class);
+        startActivity(intent);
+        super.onBackPressed();
+    }
+    /* seungho */
 }

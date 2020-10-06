@@ -24,9 +24,21 @@ public class OrderDetails extends Activity {
             public void onClick(View v) {
                 Intent intent = new Intent(OrderDetails.this,Confirm.class);
                 startActivity(intent);
+                /* seungho */
+                finish();
+                /* seungho */
             }
         });
 
 
     }
+
+    /* seungho */
+    @Override
+    public void onBackPressed() {
+        Intent intent = new Intent(getApplicationContext(), OrderList.class);
+        startActivity(intent);
+        super.onBackPressed();
+    }
+    /* seungho */
 }

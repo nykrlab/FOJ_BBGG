@@ -23,6 +23,9 @@ public class splashActivity extends AppCompatActivity {
             @Override
             public void run() {
                 startActivity(new Intent(splashActivity.this, FirstActivity.class));
+                /* seungho */
+                finish();
+                /* seungho */
             }
         };
 

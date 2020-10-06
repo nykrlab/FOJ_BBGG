@@ -22,6 +22,9 @@ public class Payment extends Activity {
             public void onClick(View v) {
                 Intent intent = new Intent(Payment.this,Main.class);
                 startActivity(intent);
+                /* seungho */
+                finish();
+                /* seungho */
             }
         });
 
@@ -30,10 +33,20 @@ public class Payment extends Activity {
             public void onClick(View v) {
                 Intent intent = new Intent(Payment.this,OrderList.class);
                 startActivity(intent);
+                /* seungho */
+                finish();
+                /* seungho */
             }
         });
 
-
-
     }
+
+    /* seungho */
+    @Override
+    public void onBackPressed() {
+        Intent intent = new Intent(getApplicationContext(), ProductList2.class);
+        startActivity(intent);
+        super.onBackPressed();
+    }
+    /* seungho */
 }

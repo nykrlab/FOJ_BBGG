@@ -28,6 +28,9 @@ public class Main extends Activity {
             public void onClick(View v) {
                 Intent intent = new Intent(Main.this,Main2.class);
                 startActivity(intent);
+                /* seungho */
+                finish();
+                /* seungho */
             }
         });
 
@@ -36,6 +39,9 @@ public class Main extends Activity {
             public void onClick(View v) {
                 Intent intent = new Intent(Main.this,ProductDetails.class);
                 startActivity(intent);
+                /* seungho */
+                finish();
+                /* seungho */
             }
         });
         user.setOnClickListener(new View.OnClickListener() {
@@ -43,7 +49,11 @@ public class Main extends Activity {
             public void onClick(View v) {
                 Intent intent = new Intent (Main.this,Myaccount2.class);
                 startActivity(intent);
+                /* seungho */
+                finish();
+                /* seungho */
             }
         });
+
     }
 }
